@@ -9,3 +9,7 @@
 .finance-with-findustrial > a {
   box-sizing: border-box;
 }
+
+.finance-with-findustrial {
+  font-family: 'Montserrat', sans-serif;
+}
