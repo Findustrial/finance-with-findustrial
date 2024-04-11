@@ -11,7 +11,7 @@ function App({ style, url, lang }) {
 
   const text = {
     de: "Jetzt flexibel finanzieren statt kaufen!",
-    en: "Flex-finance Now, Instead of Buying!"
+    en: "Flex-Finance Now, Instead of Buying!"
   }
 
   // redirect to url
