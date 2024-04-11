@@ -24,7 +24,7 @@ function loadStyle(url) {
 
 (function loadApp() {
   return Promise.all([
-    loadStyle('./dist/style.css'),
-    loadScript('./dist/finance-with-findustrial.umd.cjs')
+    loadStyle('https://cdn.jsdelivr.net/gh/findustrial/finance-with-findustrial/dist/style.css'),
+    loadScript('https://cdn.jsdelivr.net/gh/findustrial/finance-with-findustrial/dist/finance-with-findustrial.umd.cjs')
   ])
 })()
