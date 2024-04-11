@@ -3,9 +3,6 @@
 ```bash
 $ npm install # or pnpm install or yarn install
 ```
-
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -25,4 +22,16 @@ Your app is ready to be deployed!
 
 ## Deployment
 
-Learn more about deploying your application with the [documentations](https://vitejs.dev/guide/static-deploy.html)
+### CDN
+
+````html
+<!-- Include script at the end of body tag -->
+<script async defer src="https://cdn.jsdelivr.net/gh/finsutrial/finance-with-findustrial/dist.js"></script>
+
+
+<!-- Include the button the following ways -->
+  <div class="finance-with-findustrial"></div>
+  <div class="finance-with-findustrial" data-style="light"></div>
+  <div class="finance-with-findustrial" data-style="dark"></div>
+
+````
