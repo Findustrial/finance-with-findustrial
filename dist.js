@@ -30,6 +30,6 @@ function loadStyle(url) {
 
   return Promise.all([
     loadStyle(baseUrl + 'dist/style.css'),
-    loadScript(baseUrl + 'dist/finance-with-findustrial.umd.cjs')
+    loadScript(baseUrl + 'dist/finance-with-findustrial.js')
   ])
 })()

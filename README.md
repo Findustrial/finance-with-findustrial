@@ -20,13 +20,16 @@ It correctly bundles Solid in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
+
+### PURGE CDN!
+
 ## Deployment
 
 ### CDN
 
 ````html
 <!-- Include script at the end of body tag -->
-  <script defer async src="https://cdn.jsdelivr.net/gh/findustrial/finance-with-findustrial/dist.js"></script>
+  <script defer async src="https://cdn.jsdelivr.net/gh/findustrial/finance-with-findustrial@latest/dist.js"></script>
 
 
 <!-- Include the button the following ways -->
