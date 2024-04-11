@@ -26,12 +26,12 @@ Your app is ready to be deployed!
 
 ````html
 <!-- Include script at the end of body tag -->
-  <script defer async src="https://cdn.jsdelivr.net/gh/findustrial/finance-with-findustrial/dist.js"><script>
+  <script defer async src="https://cdn.jsdelivr.net/gh/findustrial/finance-with-findustrial/dist.js"></script>
 
 
 <!-- Include the button the following ways -->
   <div class="finance-with-findustrial"></div>
-  <div class="finance-with-findustrial" data-style="light"></div>
-  <div class="finance-with-findustrial" data-style="dark"></div>
+  <div class="finance-with-findustrial" data-style="light" data-lang="de"></div>
+  <div class="finance-with-findustrial" data-style="dark" data-lang="en"></div>
 
 ````

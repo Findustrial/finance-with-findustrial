@@ -2,13 +2,17 @@
 import logo from './assets/image.png'
 import logoDark from './assets/image_dark.png'
 
-function App({ style, url }) {
+function App({ style, url, lang }) {
 
   const _size = "medium"
   const _style = style || 'default'
+  const _lang = lang || "de"
   const _url = url || 'https://findustrial.io/de/photovoltaik-finanzierung'
 
-  const text = "Jetzt flexibel finanzieren statt kaufen!"
+  const text = {
+    de: "Jetzt flexibel finanzieren statt kaufen!",
+    en: "Flex-finance Now, Instead of Buying!"
+  }
 
   // redirect to url
   const buttonStyles = {
@@ -66,7 +70,7 @@ function App({ style, url }) {
   return (
     <>
       <a href={_url} class={buttonStyles[_style][_size]}>
-        <p class={pStyles[_style][_size]}>{text}</p>
+        <p class={pStyles[_style][_size]}>{text[_lang]}</p>
         <span class={spanStyles[_style][_size]}>powered by <img src={_style === 'light' ? logoDark : logo} class={imgStyles[_style][_size]}></img></span>
       </a>
     </>

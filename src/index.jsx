@@ -6,6 +6,7 @@ import App from './App'
 
 document.querySelectorAll('.finance-with-findustrial').forEach(el => {
   const dataStyle = el.getAttribute('data-style') || 'default';
-  render(() => <App style={dataStyle} />, el)
+  const dataLang = el.getAttribute('data-lang') || 'de';
+  render(() => <App style={dataStyle} lang={dataLang} />, el)
 })
 
