@@ -15,11 +15,12 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v1
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
-      - run: npm ci
+      - run: bun install
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
