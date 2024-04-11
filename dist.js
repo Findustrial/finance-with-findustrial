@@ -23,8 +23,13 @@ function loadStyle(url) {
 }
 
 (function loadApp() {
+
+  // load the base url of the script that is being executed
+  const script = document.currentScript
+  const baseUrl = script.src.replace('dist.js', '')
+
   return Promise.all([
-    loadStyle('https://cdn.jsdelivr.net/gh/findustrial/finance-with-findustrial/dist/style.css'),
-    loadScript('https://cdn.jsdelivr.net/gh/findustrial/finance-with-findustrial/dist/finance-with-findustrial.umd.cjs')
+    loadStyle(baseUrl + 'dist/style.css'),
+    loadScript(baseUrl + 'dist/finance-with-findustrial.umd.cjs')
   ])
 })()
