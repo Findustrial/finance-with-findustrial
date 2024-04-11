@@ -350,7 +350,7 @@ function re({
 }) {
   const l = "medium", s = e || "default", A = n || "de", o = t || "https://findustrial.io/de/photovoltaik-finanzierung", i = {
     de: "Jetzt flexibel finanzieren statt kaufen!",
-    en: "Flex-finance Now, Instead of Buying!"
+    en: "Flex-Finance Now, Instead of Buying!"
   }, f = {
     default: {
       small: "inline-block rounded-[4px] pt-2 pb-2 px-3 text-sm bg-[#003993] text-white text-center",
