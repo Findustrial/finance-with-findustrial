@@ -69,7 +69,7 @@ function App({ style, url, lang }) {
   
   return (
     <>
-      <a href={_url} class={buttonStyles[_style][_size]}>
+      <a target="_blank" href={_url} class={buttonStyles[_style][_size]}>
         <p class={pStyles[_style][_size]}>{text[_lang]}</p>
         <span class={spanStyles[_style][_size]}>powered by <img src={_style === 'light' ? logoDark : logo} class={imgStyles[_style][_size]}></img></span>
       </a>
